@@ -1,1 +1,0 @@
-# genie-rival-terms-conditions
