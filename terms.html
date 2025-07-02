@@ -1,49 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Genie & Rival Terms and Condition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chính Sách Genie & Rival Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg-color: linear-gradient(135deg, #ffeaa7, #fab1a0);
+      --text-color: #2d3436;
+      --card-bg: rgba(255, 255, 255, 0.9);
+      --accent: #ff7675;
+    }
+
+    body.dark {
+      --bg-color: linear-gradient(135deg, #2f3640, #353b48);
+      --text-color: #f1f2f6;
+      --card-bg: rgba(0, 0, 0, 0.6);
+      --accent: #74b9ff;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: 'Quicksand', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease;
+      padding: 20px;
+    }
+
+    .container {
       max-width: 800px;
       margin: 40px auto;
-      padding: 0 20px;
-      color: #333;
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     }
-    h1, h2 {
-      color: #2c3e50;
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .emoji {
+      font-size: 1.2em;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
-  <h1>Genie & Rival Terms and Condition</h1>
+  <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Chuyển giao diện</button>
+  <div class="container">
+    <h1>📜 Điều Khoản & Chính Sách</h1>
+    <p>Chào mừng bạn đến với nhóm chat <strong>Rival Club x Genie Tracking</strong>! Đây không chỉ là nhóm chat — đây là một thế giới nhỏ đầy tiếng cười, tình đồng nghiệp, và... sticker meme không giới hạn.</p>
 
-  <p>Welcome to Genie & Rival. By using our platform, services, or products, you agree to the following terms and conditions. Please read them carefully.</p>
+    <h2 class="emoji">🎯 Mục đích nhóm</h2>
+    <ul>
+      <li>Chia sẻ thông tin, thông báo từ team như thần gió</li>
+      <li>Hỏi han, hỗ trợ nhau như anh chị em cùng nhà</li>
+      <li>Tạo ra niềm vui nho nhỏ giữa deadline mênh mông</li>
+    </ul>
 
-  <h2>1. Acceptance of Terms</h2>
-  <p>By accessing and using Genie & Rival, you accept and agree to be bound by the terms and provisions of this agreement.</p>
+    <h2 class="emoji">🚫 Những điều cần né né</h2>
+    <ul>
+      <li>Bơm drama, tạo sóng gió — nhóm không phải biển khơi 🌊</li>
+      <li>Gây hoang mang dư luận nội bộ 😵</li>
+      <li>Diss công ty, đồng nghiệp — tình yêu phải từ hai phía 🥰</li>
+      <li>Spam ảnh mèo quá nhiều (ít nhất là trước 9h sáng)</li>
+    </ul>
 
-  <h2>2. Modification of Terms</h2>
-  <p>We reserve the right to modify these Terms at any time. Continued use of the site after any changes constitutes your acceptance of the new terms.</p>
+    <h2 class="emoji">💖 Tinh thần Genie & Rival</h2>
+    <ul>
+      <li>Luôn tích cực, dù bug có gọi tên</li>
+      <li>Cười lên cái đã, rồi tính tiếp</li>
+      <li>Yêu công ty như yêu crush... mà crush còn trả lời cơ</li>
+      <li>Ai cũng có ngày deadline dí, hãy ôm nhau qua cơn bão</li>
+    </ul>
 
-  <h2>3. User Responsibilities</h2>
-  <p>You agree to use the platform only for lawful purposes and in a way that does not infringe the rights of others or restrict their use of the platform.</p>
+    <h2 class="emoji">⚠️ Lưu ý cuối cùng</h2>
+    <ul>
+      <li>Admin có quyền đổi tên nhóm thành "Team Yêu Đời"</li>
+      <li>Gửi sticker "bó tay" nếu bạn quá nghiêm túc</li>
+      <li>Chỉnh đốn ai post tin nhảm lúc 2h sáng</li>
+    </ul>
 
-  <h2>4. Intellectual Property</h2>
-  <p>All content, branding, and intellectual property on Genie & Rival are owned by or licensed to us and are protected by law.</p>
+    <p class="footer">🎉 Cùng nhau giữ nhóm chat luôn <strong>vui vẻ, yêu thương và đậm chất Genie & Rival</strong> nhé!<br/>
+    Cập nhật lần cuối: 01/07/2025</p>
+  </div>
 
-  <h2>5. Limitation of Liability</h2>
-  <p>We are not liable for any indirect, incidental, or consequential damages arising out of your use of the platform.</p>
-
-  <h2>6. Termination</h2>
-  <p>We reserve the right to terminate or suspend access to our services immediately, without prior notice or liability, for any reason.</p>
-
-  <h2>7. Contact Information</h2>
-  <p>If you have any questions about these Terms, please contact us at <a href="mailto:support@genieandrival.com">support@genieandrival.com</a>.</p>
-
-  <p>Last updated: July 1, 2025</p>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
 </body>
 </html>
